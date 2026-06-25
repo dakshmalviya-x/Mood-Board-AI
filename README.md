@@ -205,20 +205,9 @@ JWT_SECRET=mySuperSecretKey
 
 ## 🌐 Live Demo
 
-> Replace these URLs after deployment
-
-### Frontend
-
 ```text
 https://your-frontend-url.vercel.app
 ```
-
-### Backend API
-
-```text
-https://your-backend-url.onrender.com
-```
-
 ---
 
 ## 🎨 Design Philosophy
