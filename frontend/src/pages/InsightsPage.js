@@ -12,7 +12,7 @@ export default function InsightsPage() {
   const fetchInsight = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("https://mood-board-ai.onrender.com", {
+      const res = await axios.get("https://mood-board-ai.onrender.com/api/insights", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setInsight(res.data.insight);

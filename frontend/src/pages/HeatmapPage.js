@@ -18,7 +18,7 @@ export default function HeatmapPage() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://mood-board-ai.onrender.com",
+        "https://mood-board-ai.onrender.com/api/mood/entries",
         {
           headers: {
             Authorization: `Bearer ${token}`
