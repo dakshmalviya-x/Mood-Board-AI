@@ -13,7 +13,7 @@ export default function HistoryPage() {
   const fetchEntries = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/mood/entries", {
+      const res = await axios.get("https://mood-board-ai.onrender.com", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEntries(res.data);

@@ -22,7 +22,7 @@ export default function DashboardPage() {
   const fetchStreak = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/streak", {
+      const res = await axios.get("https://mood-board-ai.onrender.com/api/streak", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setStreak(res.data);
@@ -90,7 +90,7 @@ export default function DashboardPage() {
         </div>
 
         <section className="grid gap-4 rounded-[2rem] border border-white/10 bg-white/10 p-5 backdrop-blur-xl md:grid-cols-3">
-          <button onClick={() => window.open(`http://localhost:5000/api/report?token=${localStorage.getItem("token")}`)} className="rounded-[1.25rem] border border-white/10 bg-slate-950/70 p-4 text-left transition hover:border-cyan-300/40">
+          <button onClick={() => window.open(`https://mood-board-ai.onrender.com/api/report?token=${localStorage.getItem("token")}`)} className="rounded-[1.25rem] border border-white/10 bg-slate-950/70 p-4 text-left transition hover:border-cyan-300/40">
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">Download</p>
             <p className="mt-2 text-lg font-semibold text-white">Create a report</p>
             <p className="mt-2 text-sm text-slate-300">Share your emotional timeline in a clean PDF.</p>
