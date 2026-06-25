@@ -206,7 +206,7 @@ JWT_SECRET=mySuperSecretKey
 ## 🌐 Live Demo
 
 ```text
-https://your-frontend-url.vercel.app
+https://mood-board-ai-wheat.vercel.app/
 ```
 ---
 
