@@ -27,7 +27,7 @@ export default function JournalPage() {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.post("http://localhost:5000/api/mood/analyze", { text }, { headers: { Authorization: `Bearer ${token}` } });
+      const res = await axios.post("https://mood-board-ai.onrender.com/api/mood/analyze", { text }, { headers: { Authorization: `Bearer ${token}` } });
       toast.success("Your reflection is saved.");
       setResult(res.data.mood);
     } catch (err) {

@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const API = "http://localhost:5000/api";
+  const API = "https://mood-board-ai.onrender.com/api";
 
   useEffect(() => {
     const token = localStorage.getItem("token");
